@@ -1,13 +1,12 @@
 """
-This file could contain the necessary calls to make plots etc for 
-case 1
-
+This file could contain the necessary calls to make plots etc for case 1
 """
 
 import sys
-sys.path.append('../')
 import os
 import lorenz
+
+sys.path.append('../')
 
 def ode_lorenz_attractor1(X, t):
     # Define parameter
