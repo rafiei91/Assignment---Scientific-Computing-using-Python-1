@@ -6,8 +6,6 @@ import sys
 import os
 import lorenz
 
-sys.path.append('../')
-
 delta = 10
 beta = 8 * (1 / 3)
 rho = 6
@@ -17,5 +15,7 @@ if os.path.exists('case1') is False:
 
 U_0 = [-1,-1,20]    # Initial Conditions
 f = Lorenz_a   # ODE
+
+sys.path.append('../')
 
 lorenz.run.simulate(f,U_0,'case1',False)
