@@ -4,6 +4,7 @@ This file contains the necessary calls to make plots etc for case 1
 
 import sys
 import os
+import Lorenz_a
 
 delta = 10
 beta = 8 * (1 / 3)
