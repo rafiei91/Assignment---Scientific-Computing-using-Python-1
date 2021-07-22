@@ -8,21 +8,9 @@ import lorenz
 
 sys.path.append('../')
 
-def ode_lorenz_attractor1(X, t):
-    # Define parameter
-    x, y, z = X
-
-    # Case 1
-    delta = 10
-    beta = 8 * (1 / 3)
-    rho = 6
-
-    dxdt = delta * (y - x)
-    dydt = x * (rho - z) - y
-    dzdt = x * y - beta * z
-
-    # the function returns the vector [dxdt, dydt, dzdt]
-    return [dxdt, dydt, dzdt]
+delta = 10
+beta = 8 * (1 / 3)
+rho = 6
 
 if os.path.exists('case1') is False:
     os.mkdir('case1')
