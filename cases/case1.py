@@ -16,6 +16,6 @@ if os.path.exists('case1') is False:
     os.mkdir('case1')
 
 U_0 = [-1,-1,20]    # Initial Conditions
-f = ode_lorenz_attractor1   # ODE
+f = Lorenz_a   # ODE
 
 lorenz.run.simulate(f,U_0,'case1',False)
