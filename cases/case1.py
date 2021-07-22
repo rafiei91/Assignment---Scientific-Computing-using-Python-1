@@ -1,5 +1,5 @@
 """
-This file could contain the necessary calls to make plots etc for case 1
+This file contains the necessary calls to make plots etc for case 1
 """
 
 import sys
