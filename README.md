@@ -9,4 +9,4 @@ Author: **Mehdi Rafiei Foroushani**
 ## Files & Folders
 
 ## Implementation
-
+Firstly, it should be mentioned that the provided guide is for implementation on windows.
