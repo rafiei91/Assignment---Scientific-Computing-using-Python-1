@@ -30,11 +30,11 @@ Put your prefered environment name instead on "Name".
 conda activate Name
 ```
 6. Make sure to use python 3.8.
-Check:
+- Check:
 ```
 python --version
 ```
-Install:
+- Install:
 ```
 conda install -c anaconda python=3.8
 ```
