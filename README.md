@@ -20,16 +20,20 @@ cd path
 ```
 git clone https://github.com/rafiei91/Assignment---Scientific-Computing-using-Python-1.git
 ```
-4. Make a conda environment:
+4. Go to the cloned representory
+```
+cd Assignment---Scientific Computing using Python-1
+```
+5. Make a conda environment:
 ```
 conda create -n Name
 ```
 Put your prefered environment name instead on "Name".
-5. Activate the environment:
+6. Activate the environment:
 ```
 conda activate Name
 ```
-6. Make sure to use python 3.8.
+7. Make sure to use python 3.8.
 - Check:
 ```
 python --version
@@ -38,7 +42,7 @@ python --version
 ```
 conda install -c anaconda python=3.8
 ```
-7. Install the requirements:
+8. Install the requirements:
 ```
 conda install requirements.txt
 ```
