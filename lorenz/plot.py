@@ -5,23 +5,7 @@ This file contains functionalities for plotting
 import matplotlib.pyplot as plt
 
 
-def plot3d(a, b, c, name, s):
-    """
-    This function creates a 3D plot (x-y-z) and stores the figure as PDF
-
-    INPUT::
-
-     a: first variable as array
-     b: second variable as array
-     c: third variable as array
-     name: name for making the title etc.
-     s: if True then the plot will be shown (to continue execution close the plot window)
-
-    OUPUT::
-
-     stores a figure in /name/3dplot.pdf
-
-    """
+def plot3d(a, b, c, name, s): # make a pdf file for the 3D plot
 
     # Initialize a figure
     fig = plt.figure()
@@ -36,27 +20,11 @@ def plot3d(a, b, c, name, s):
     if s is True:
         plt.show()
 
-    plt.savefig(name + "/3dplot.pdf")
+    plt.savefig(name + "/3D.pdf")
 
 
-def plot2d(a, b, c, name, s):
-    """
-    This function creates three subplots (x-y, x-z, y-z) and stores the figure as PDF
-
-    INPUT::
-
-     a: first variable as array
-     b: second variable as array
-     c: third variable as array
-     name: name for making the title etc.
-     s: if True then the plot will be shown (to continue execution close the plot window)
-
-    OUPUT::
-
-     stores a figure in /name/2dplot.pdf
-
-    """
-
+def plot2d(a, b, c, name, s): # make a pdf file for three 2D plots
+    
     # Initialize a figure
     fig, axs = plt.subplots(3, figsize=(8, 10))
     fig.suptitle('Lorenz Attractor ' + name)
@@ -76,4 +44,4 @@ def plot2d(a, b, c, name, s):
     if s is True:
         plt.show()
 
-    plt.savefig(name + "/2dplot.pdf")
+    plt.savefig(name + "/2D.pdf")
