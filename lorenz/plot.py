@@ -1,9 +1,8 @@
 """
 This file contains functionalities for plotting
-
 """
-import matplotlib.pyplot as plt
 
+import matplotlib.pyplot as plt
 
 def plot3d(a, b, c, name, s): # make a pdf file for the 3D plot
 
@@ -21,7 +20,6 @@ def plot3d(a, b, c, name, s): # make a pdf file for the 3D plot
         plt.show()
 
     plt.savefig(name + "/3D.pdf")
-
 
 def plot2d(a, b, c, name, s): # make a pdf file for three 2D plots
     
