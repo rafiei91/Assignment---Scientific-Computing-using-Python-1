@@ -43,4 +43,7 @@ conda install -c anaconda python=3.8
 conda install requirements.txt
 ```
 ### Execution
-1.
+In order to execute the cases or the test, the below command must be used with some costomizations.
+```
+python Main.py --code_select case(or test) --case_number 1(or 2, 3, 4, 5 - if the cases are going to be executed)
+```
