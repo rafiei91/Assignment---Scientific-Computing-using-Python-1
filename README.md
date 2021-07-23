@@ -10,7 +10,7 @@ Author: **Mehdi Rafiei Foroushani**
 
 ## Implementation
 Firstly, it should be mentioned that the provided guide is for implementation on windows.
-
+### Preparation
 1. Open a commond prompet (preferly Anaconda prompt)
 2. Direct to your prefered direction:
 ```
@@ -42,4 +42,5 @@ conda install -c anaconda python=3.8
 ```
 conda install requirements.txt
 ```
-8. 
+### Execution
+1.
