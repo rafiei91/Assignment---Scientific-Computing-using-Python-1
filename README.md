@@ -13,6 +13,6 @@ Firstly, it should be mentioned that the provided guide is for implementation on
 
 1. Open a commond prompet (preferly Anaconda prompt)
 2. Direct to your prefered direction:
-'''
+```
 cd "path"
-'''
+```
