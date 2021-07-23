@@ -16,3 +16,16 @@ Firstly, it should be mentioned that the provided guide is for implementation on
 ```
 cd "path"
 ```
+3. Clone the code on the direction:
+```
+git clone
+```
+4. Make a conda environment:
+```
+conda create -n Name
+```
+Put your prefered environment name instead on "Name".
+4. Activate the environment:
+```
+conda activate Name
+```
