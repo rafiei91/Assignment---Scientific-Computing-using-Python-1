@@ -13,7 +13,7 @@ def ode_lorenz_attractor(X, t): # Defining the ODE functions, initial conditions
     x, y, z = X
 
     delta = 10
-    beta = 8 * (1 / 3)
+    beta = 8 / 3
     rho = 16
 
     dxdt = delta * (y - x)
