@@ -8,9 +8,3 @@ def save_data(file, case): # hdf5 file saving
     f = h5py.File(case + "/" + case + '.hdf5', 'w')
     f.create_dataset('RND', data=file)
     f.close()
-
-def load_data(case): # hdf5 file loading
-
-    f = h5py.File(case +'.hdf5', 'r')
-    B = f['RND'][...]
-    return B
