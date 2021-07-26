@@ -7,6 +7,8 @@ Repository's link: **https://github.com/rafiei91/Assignment---Scientific-Computi
 
 ## Program explanation
 
+The program is developed to solve the Lorenz attractor model that is based on three coupled first order Ordinary Differential Equations (ODEs). 
+The program solve it by use of simple Newton Euler algorithm for 5 different parameters values, known as case1 to case5. Also, a testing is provided for the code.
 
 
 ## Files & Folders
