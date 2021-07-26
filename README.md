@@ -6,13 +6,15 @@ Author: **Mehdi Rafiei Foroushani**
 
 ## Program explanation
 
+
+
 ## Files & Folders
 
 As it can be seen in the tree view of the directory, the repository includes 3 files, 1 python code, and 2 text files.
 
 The text files include the "requirement.txt" file that has the required tools to be installed for the main code execution and the "README.md" file that is these notes.
 
-Among the folders, the case folder includes 5 case codes that represent all 5 defined cases on the project with different parameters, and also has one "\__init__" file which is used to import the defined function in case1 on the testing phase.
+Among the folders, the case folder includes 5 case codes that represent all 5 defined cases on the project with different parameters, and also has one "\__init__\" file which is used to import the defined function in case1 on the testing phase.
 The other folder is "lorenz" one that includes the required lorenz related codes to solve the problem, save the results, and plot the outputs.
 Finally, the last folder contains the "test" code.
 
