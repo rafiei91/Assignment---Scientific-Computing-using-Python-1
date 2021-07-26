@@ -1,8 +1,7 @@
 """
 In this file you may have your tests
-
-
 """
+
 import sys
 sys.path.append('../')
 
@@ -11,32 +10,29 @@ from scipy.integrate import solve_ivp
 import numpy as np
 
 import lorenz
+import case.case1.ode_lorenz_attractor as f
 
+#def ode_lorenz_attractor1(X, t):
+ 
+ #   x, y, z = X
 
-def ode_lorenz_attractor1(X, t):
-    # Define parameter
-    x, y, z = X
+  #  delta = 10
+   # beta = 8 * (1 / 3)
+    #rho = 6
 
-    # Case 1
-    delta = 10
-    beta = 8 * (1 / 3)
-    rho = 6
+ #   dxdt = delta * (y - x)
+  #  dydt = x * (rho - z) - y
+   # dzdt = x * y - beta * z
 
-    dxdt = delta * (y - x)
-    dydt = x * (rho - z) - y
-    dzdt = x * y - beta * z
-
-    # the function returns the vector [dxdt, dydt, dzdt]
-    return [dxdt, dydt, dzdt]
+    #return [dxdt, dydt, dzdt]
 
 
 def ode_lorenz_attractor2(t, X):
-    # Define parameter
+
     x = X[0]
     y = X[1]
     z = X[2]
 
-    # Case 1
     delta = 10
     beta = 8 * (1 / 3)
     rho = 6
@@ -45,22 +41,13 @@ def ode_lorenz_attractor2(t, X):
     dydt = x * (rho - z) - y
     dzdt = x * y - beta * z
 
-    # the function returns the vector [dxdt, dydt, dzdt]
     return [dxdt, dydt, dzdt]
 
 
 class TestMethod(unittest.TestCase):
 
-    # def test_up(self):
-    #    self.assertEqual('foo'.upper(), 'FOo')
-
-    # def test_isupper(self):
-    #    self.assertTrue('FOO'.isupper())
-    #    self.assertFalse('Foo'.isupper())
-
     def test_solver(self):
-        # Using Scipy solver
-        U_0 = [-1, -1, 20]
+        c0 = [-1, -1, 20]
         dt = 0.01
         N = 50001
         T = N * dt
@@ -70,9 +57,8 @@ class TestMethod(unittest.TestCase):
         y1 = sol.y[1]
         z1 = sol.y[2]
 
-        # Using own solver implementation
-        f = ode_lorenz_attractor1
-        u, t = lorenz.solver.ode_solver(f, U_0)
+        #f = ode_lorenz_attractor1
+        u, t = lorenz.solver.ode_solver(f, c0)
 
         x2 = u[:, 0]
         y2 = u[:, 1]
