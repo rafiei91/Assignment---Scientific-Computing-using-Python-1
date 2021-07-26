@@ -12,7 +12,7 @@ import numpy as np
 import lorenz
 import case
 
-def ode_lorenz_attractor2(t, X):
+def ode_lorenz_attractor_t(t, X):
 
     x = X[0]
     y = X[1]
@@ -37,7 +37,7 @@ class TestMethod(unittest.TestCase):
         N = 50001
         T = N * dt
 
-        sol = solve_ivp(ode_lorenz_attractor2, y0=c0, t_span=[0, T], t_eval=np.arange(0, T, dt))
+        sol = solve_ivp(ode_lorenz_attractor_t, y0=c0, t_span=[0, T], t_eval=np.arange(0, T, dt))
         x1 = sol.y[0]
         y1 = sol.y[1]
         z1 = sol.y[2]
