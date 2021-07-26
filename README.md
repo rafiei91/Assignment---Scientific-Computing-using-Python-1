@@ -38,16 +38,19 @@ Also, in order to have an easy and straightforward execution, a "Main.py" code f
 │       case3.py
 │       case4.py
 │       case5.py
+│       README.md
 │       __init__.py
 │
 ├───lorenz
 │       filehandling.py
 │       plot.py
+│       README.md
 │       run.py
 │       solver.py
 │       __init__.py
 │
 └───test
+        README.md
         test.py
 ```
 
