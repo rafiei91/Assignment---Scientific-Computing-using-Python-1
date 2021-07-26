@@ -22,7 +22,7 @@ git clone https://github.com/rafiei91/Assignment---Scientific-Computing-using-Py
 ```
 4. Go to the cloned representory
 ```
-cd Assignment---Scientific Computing using Python-1
+cd Assignment---Scientific-Computing-using-Python-1
 ```
 5. Make a conda environment:
 ```
