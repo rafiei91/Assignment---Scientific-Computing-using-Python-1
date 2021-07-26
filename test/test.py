@@ -10,22 +10,7 @@ from scipy.integrate import solve_ivp
 import numpy as np
 
 import lorenz
-import case.case1.ode_lorenz_attractor as f
-
-#def ode_lorenz_attractor1(X, t):
- 
- #   x, y, z = X
-
-  #  delta = 10
-   # beta = 8 * (1 / 3)
-    #rho = 6
-
- #   dxdt = delta * (y - x)
-  #  dydt = x * (rho - z) - y
-   # dzdt = x * y - beta * z
-
-    #return [dxdt, dydt, dzdt]
-
+import case
 
 def ode_lorenz_attractor2(t, X):
 
@@ -52,12 +37,12 @@ class TestMethod(unittest.TestCase):
         N = 50001
         T = N * dt
 
-        sol = solve_ivp(ode_lorenz_attractor2, y0=U_0, t_span=[0, T], t_eval=np.arange(0, T, dt))
+        sol = solve_ivp(ode_lorenz_attractor2, y0=c0, t_span=[0, T], t_eval=np.arange(0, T, dt))
         x1 = sol.y[0]
         y1 = sol.y[1]
         z1 = sol.y[2]
 
-        #f = ode_lorenz_attractor1
+        f = case.case1.ode_lorenz_attractor
         u, t = lorenz.solver.ode_solver(f, c0)
 
         x2 = u[:, 0]
