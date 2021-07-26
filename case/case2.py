@@ -1,18 +1,17 @@
-"""
-This file could contain the necessary calls to make plots etc for 
-case 2
 
 """
+This file could contain the necessary calls to make plots etc for case 2
+"""
+
 import sys
 sys.path.append('../')
 import os
 import lorenz
 
-def ode_lorenz_attractor1(X, t):
-    # Define parameter
+def ode_lorenz_attractor(X, t): # Defining the ODE functions, initial conditions and case parameters, and calling the solver
+    
     x, y, z = X
 
-    # Case 2
     delta = 10
     beta = 8 * (1 / 3)
     rho = 16
@@ -21,13 +20,12 @@ def ode_lorenz_attractor1(X, t):
     dydt = x * (rho - z) - y
     dzdt = x * y - beta * z
 
-    # the function returns the vector [dxdt, dydt, dzdt]
     return [dxdt, dydt, dzdt]
 
 if os.path.exists('case2') is False:
     os.mkdir('case2')
 
-U_0 = [-1,-1,20]    # Initial Conditions
-f = ode_lorenz_attractor1   # ODE
+c0 = [-1,-1,20]    # Initial Conditions
+f = ode_lorenz_attractor   # ODE
 
-lorenz.run.simulate(f,U_0,'case2',False)
+lorenz.run.simulate(f,c0,'case2',False)
