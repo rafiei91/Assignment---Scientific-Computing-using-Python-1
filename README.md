@@ -18,6 +18,7 @@ Finally, the last folder contains the "test" code.
 
 Also, in order to have an easy and straightforward execution, a "Main.py" code file is made to run it with the required input and do the ODE solvation on each case or do the test.
 
+```bash
 │   Main.py
 │   README.md
 │   requirements.txt
@@ -39,6 +40,7 @@ Also, in order to have an easy and straightforward execution, a "Main.py" code f
 │
 └───test
         test.py
+```
 
 ## Implementation
 
