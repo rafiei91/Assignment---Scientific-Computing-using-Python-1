@@ -8,7 +8,7 @@ Each code includes a function defining the Lorenz attraction ode with the relate
 
 Then, the path to save the results is created.
 
-Finally, the function _simulation_ (defined in lorenz/run) is called and the defined ODE function, initial conditions, and the case name are given to it as its inputs.
+Finally, the function _execute_ (defined in lorenz/run) is called and the defined ODE function, initial conditions, and the case name are given to it as its inputs.
 
 ## \__init__
 
