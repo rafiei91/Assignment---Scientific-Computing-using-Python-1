@@ -19,7 +19,7 @@ def ode_lorenz_attractor_t(t, X):
     z = X[2]
 
     delta = 10
-    beta = 8 * (1 / 3)
+    beta = 8 / 3
     rho = 6
 
     dxdt = delta * (y - x)
@@ -32,7 +32,7 @@ def ode_lorenz_attractor_t(t, X):
 class TestMethod(unittest.TestCase):
 
     def test_solver(self):
-        c0 = [-1, -1, 20]
+        c0 = [4, 4, 5]
         dt = 0.01
         N = 50001
         T = N * dt
