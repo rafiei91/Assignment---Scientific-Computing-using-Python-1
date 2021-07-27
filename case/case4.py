@@ -24,7 +24,7 @@ def ode_lorenz_attractor(X, t): # Defining the ODE functions, initial conditions
 if os.path.exists('case4') is False:
     os.mkdir('case4')
 
-c0 = [-1,-1,20]    # Initial Conditions
+c0 = [9, 9, 27]    # Initial Conditions
 f = ode_lorenz_attractor   # ODE
 
 lorenz.run.execute(f,c0,'case4',False)
