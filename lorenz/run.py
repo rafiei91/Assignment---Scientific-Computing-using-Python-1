@@ -14,6 +14,6 @@ def execute(f, c0, case, s): # Execute ODE solver and call the saver and ploters
     y = u[:, 1]
     z = u[:, 2]
 
-    fh.save_data([x, y, z, t], case)
-    plot.2D_plot(x, y, z, case, s)
-    plot.plot3d(x, y, z, case, s)
+    fh.saveing([x, y, z, t], case)
+    plot.plot_2D(x, y, z, case, s)
+    plot.plot_3D(x, y, z, case, s)
