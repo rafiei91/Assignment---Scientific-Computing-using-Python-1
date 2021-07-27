@@ -4,7 +4,7 @@ This file contains functionalities for plotting
 
 import matplotlib.pyplot as plt
 
-def plot3d(a, b, c, case, s): # make a pdf file for the 3D plot
+def plot_3D(a, b, c, case, s): # make a pdf file for the 3D plot
 
     fig = plt.figure()
     
@@ -16,7 +16,7 @@ def plot3d(a, b, c, case, s): # make a pdf file for the 3D plot
 
     plt.savefig(case + "/" + case + " - 3D.pdf")
 
-def plot2d(a, b, c, case, s): # make a pdf file for three 2D plots
+def plot_2D(a, b, c, case, s): # make a pdf file for three 2D plots
     
     fig, axs = plt.subplots(3, figsize=(8, 10))
     fig.suptitle('2D Lorenz Attractor plot for ' + case)
