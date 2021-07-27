@@ -28,4 +28,4 @@ if os.path.exists('case2') is False:
 c0 = [-1,-1,20]    # Initial Conditions
 f = ode_lorenz_attractor   # ODE
 
-lorenz.run.simulate(f,c0,'case2',False)
+lorenz.run.execute(f,c0,'case2',False)
