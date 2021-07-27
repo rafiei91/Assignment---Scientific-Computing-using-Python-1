@@ -6,7 +6,7 @@ from . import filehandling as fh
 from . import plot
 from . import solver
 
-def simulate(f, c0, case, s): # Execute ODE solver and call the saver and ploters
+def execute(f, c0, case, s): # Execute ODE solver and call the saver and ploters
 
     u, t = solver.ode_solver(f, c0)
 
@@ -15,5 +15,5 @@ def simulate(f, c0, case, s): # Execute ODE solver and call the saver and ploter
     z = u[:, 2]
 
     fh.save_data([x, y, z, t], case)
-    plot.plot2d(x, y, z, case, s)
+    plot.2D_plot(x, y, z, case, s)
     plot.plot3d(x, y, z, case, s)
