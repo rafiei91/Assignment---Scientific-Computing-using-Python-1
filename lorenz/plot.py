@@ -12,7 +12,7 @@ def plot_3D(a, b, c, case, s): # make a pdf file for the 3D plot
     ax.plot(a, b, c, color='r')
     fig.suptitle('3D Lorenz Attractor plot for ' + case)
 
-    ax.set(xlabel='x', ylabel='z', zlabel='z')
+    ax.set(xlabel='x', ylabel='y', zlabel='z')
 
     plt.savefig(case + "/" + case + " - 3D.pdf")
 
