@@ -27,7 +27,7 @@ def plot_2D(a, b, c, case, s): # make a pdf file for three 2D plots
     axs[1].plot(a, c, color='r')
     axs[1].set(xlabel='x', ylabel='z', title='(x-z) plot')
 
-    axs[2].plot(c, b, color='r')
+    axs[2].plot(b, c, color='r')
     axs[2].set(xlabel='y', ylabel='z', title='(y-z) plot')
 
     fig.subplots_adjust(hspace=0.5)
