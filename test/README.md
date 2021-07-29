@@ -2,4 +2,4 @@
 
 This file uses _Scipy solver_ to test the code.
 
-The testing presedure is dune on the case number 1.
+The testing presedure is done on the case number 1.
